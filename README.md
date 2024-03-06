@@ -1,4 +1,5 @@
 # Application en C# et MYSql sur Pathé Gaumont
+## Projet réalisé en 1ère année de BTS SIO
 > Fait en groupe avec Rayan et Adrien
 ## Nous avions 5 fonctionnalités à faire et intégrer dans l'application
 ### **<ins>Fonctionnalité 1**</ins>
