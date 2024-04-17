@@ -1,15 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Odbc;
-using System.Data.OleDb;
-using System.Threading;
 
 namespace Cinema
 {
@@ -110,9 +101,6 @@ namespace Cinema
                 {
                     lblmessage.Text = "Erreur ajout non effectué";
                 }
-
-                
-                
             }
             else
             {
@@ -167,7 +155,8 @@ namespace Cinema
             cnn.Open();
 
             //Requête Sql pour séléctionner les données correspondant à la recherche
-            cmd.CommandText = "select * from genre where libgenre like '" + txtrecherche.Text + "%'";
+            cmd.CommandText = "select * from genre where libgenre like ?";
+            cmd.Parameters.AddWithValue("1", "%"+txtrecherche.Text+"%");
             cmd.Connection = cnn;
             lecteur = cmd.ExecuteReader();
             existedonnee = lecteur.Read();

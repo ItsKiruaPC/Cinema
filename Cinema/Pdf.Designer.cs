@@ -42,10 +42,10 @@
             this.fichier = new System.Windows.Forms.ToolStripMenuItem();
             this.quitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.catégorie = new System.Windows.Forms.ToolStripMenuItem();
-            this.sallesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.filmsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.projectionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sallesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pdfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.projectionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menu.SuspendLayout();
             this.SuspendLayout();
@@ -69,6 +69,7 @@
             // 
             // lbl_date
             // 
+            this.lbl_date.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_date.AutoSize = true;
             this.lbl_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_date.ForeColor = System.Drawing.SystemColors.Control;
@@ -81,6 +82,7 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(438, 246);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -91,6 +93,7 @@
             // 
             // btn_confirm
             // 
+            this.btn_confirm.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_confirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.btn_confirm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(16)))), ((int)(((byte)(221)))));
             this.btn_confirm.FlatAppearance.BorderSize = 2;
@@ -108,6 +111,7 @@
             // 
             // btn_reinitialiser
             // 
+            this.btn_reinitialiser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_reinitialiser.AutoSize = true;
             this.btn_reinitialiser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.btn_reinitialiser.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(16)))), ((int)(((byte)(221)))));
@@ -126,6 +130,7 @@
             // 
             // btn_edition
             // 
+            this.btn_edition.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_edition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.btn_edition.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(16)))), ((int)(((byte)(221)))));
             this.btn_edition.FlatAppearance.BorderSize = 2;
@@ -143,6 +148,7 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.btn_Fermer);
             this.panel1.Controls.Add(this.btn_Moyen);
             this.panel1.Controls.Add(this.btn_Petit);
@@ -197,11 +203,8 @@
             // menu
             // 
             this.menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(45)))), ((int)(((byte)(67)))));
-            this.menu.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menu.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fichier,
-            this.catégorie});
+            this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { this.fichier, this.catégorie });
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
             this.menu.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
@@ -213,13 +216,12 @@
             // fichier
             // 
             this.fichier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
-            this.fichier.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.quitterToolStripMenuItem});
+            this.fichier.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.quitterToolStripMenuItem });
             this.fichier.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.fichier.ForeColor = System.Drawing.SystemColors.Control;
             this.fichier.Margin = new System.Windows.Forms.Padding(0, 0, 0, -1);
             this.fichier.Name = "fichier";
-            this.fichier.Size = new System.Drawing.Size(78, 29);
+            this.fichier.Size = new System.Drawing.Size(74, 29);
             this.fichier.Text = "Fichier";
             // 
             // quitterToolStripMenuItem
@@ -227,65 +229,61 @@
             this.quitterToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.quitterToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(139, 30);
             this.quitterToolStripMenuItem.Text = "Quitter";
             this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
             // 
             // catégorie
             // 
             this.catégorie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
-            this.catégorie.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.filmsToolStripMenuItem,
-            this.sallesToolStripMenuItem,
-            this.pdfToolStripMenuItem,
-            this.projectionsToolStripMenuItem});
+            this.catégorie.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.filmsToolStripMenuItem, this.sallesToolStripMenuItem, this.pdfToolStripMenuItem, this.projectionsToolStripMenuItem });
             this.catégorie.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.catégorie.ForeColor = System.Drawing.SystemColors.Control;
             this.catégorie.Margin = new System.Windows.Forms.Padding(0, 0, 0, -1);
             this.catégorie.Name = "catégorie";
-            this.catégorie.Size = new System.Drawing.Size(112, 29);
+            this.catégorie.Size = new System.Drawing.Size(108, 29);
             this.catégorie.Text = "Catégories";
-            // 
-            // sallesToolStripMenuItem
-            // 
-            this.sallesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
-            this.sallesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
-            this.sallesToolStripMenuItem.Name = "sallesToolStripMenuItem";
-            this.sallesToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.sallesToolStripMenuItem.Text = "Salles";
-            this.sallesToolStripMenuItem.Click += new System.EventHandler(this.sallesToolStripMenuItem_Click);
             // 
             // filmsToolStripMenuItem
             // 
             this.filmsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.filmsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.filmsToolStripMenuItem.Name = "filmsToolStripMenuItem";
-            this.filmsToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.filmsToolStripMenuItem.Size = new System.Drawing.Size(171, 30);
             this.filmsToolStripMenuItem.Text = "Genres";
             this.filmsToolStripMenuItem.Click += new System.EventHandler(this.genreToolStripMenuItem_Click);
             // 
-            // projectionsToolStripMenuItem
+            // sallesToolStripMenuItem
             // 
-            this.projectionsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
-            this.projectionsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
-            this.projectionsToolStripMenuItem.Name = "projectionsToolStripMenuItem";
-            this.projectionsToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.projectionsToolStripMenuItem.Text = "Projections";
-            this.projectionsToolStripMenuItem.Click += new System.EventHandler(this.projectionsToolStripMenuItem_Click);
+            this.sallesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
+            this.sallesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.sallesToolStripMenuItem.Name = "sallesToolStripMenuItem";
+            this.sallesToolStripMenuItem.Size = new System.Drawing.Size(171, 30);
+            this.sallesToolStripMenuItem.Text = "Salles";
+            this.sallesToolStripMenuItem.Click += new System.EventHandler(this.sallesToolStripMenuItem_Click);
             // 
             // pdfToolStripMenuItem
             // 
             this.pdfToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.pdfToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.pdfToolStripMenuItem.Name = "pdfToolStripMenuItem";
-            this.pdfToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.pdfToolStripMenuItem.Size = new System.Drawing.Size(171, 30);
             this.pdfToolStripMenuItem.Text = "Films";
             this.pdfToolStripMenuItem.Click += new System.EventHandler(this.filmsToolStripMenuItem_Click);
             // 
+            // projectionsToolStripMenuItem
+            // 
+            this.projectionsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
+            this.projectionsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.projectionsToolStripMenuItem.Name = "projectionsToolStripMenuItem";
+            this.projectionsToolStripMenuItem.Size = new System.Drawing.Size(171, 30);
+            this.projectionsToolStripMenuItem.Text = "Projections";
+            this.projectionsToolStripMenuItem.Click += new System.EventHandler(this.projectionsToolStripMenuItem_Click);
+            // 
             // Pdf
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.panel1);
@@ -307,7 +305,6 @@
             this.menu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

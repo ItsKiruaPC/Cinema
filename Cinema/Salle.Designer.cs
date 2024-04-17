@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btn_refresh = new System.Windows.Forms.Button();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblmessage = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -59,21 +58,6 @@
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btn_refresh
-            // 
-            this.btn_refresh.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(16)))), ((int)(((byte)(221)))));
-            this.btn_refresh.FlatAppearance.BorderSize = 2;
-            this.btn_refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_refresh.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_refresh.Location = new System.Drawing.Point(291, 583);
-            this.btn_refresh.Name = "btn_refresh";
-            this.btn_refresh.Size = new System.Drawing.Size(171, 86);
-            this.btn_refresh.TabIndex = 7;
-            this.btn_refresh.Text = "Rafraichir";
-            this.btn_refresh.UseVisualStyleBackColor = true;
-            this.btn_refresh.Click += new System.EventHandler(this.btn_refresh_Click_1);
-            // 
             // lblmessage
             // 
             this.lblmessage.AutoSize = true;
@@ -86,6 +70,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
@@ -98,6 +83,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
@@ -110,6 +96,7 @@
             // 
             // txtnom
             // 
+            this.txtnom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtnom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
             this.txtnom.ForeColor = System.Drawing.SystemColors.Control;
             this.txtnom.Location = new System.Drawing.Point(861, 260);
@@ -119,6 +106,7 @@
             // 
             // txtnum
             // 
+            this.txtnum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtnum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
             this.txtnum.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtnum.ForeColor = System.Drawing.SystemColors.Control;
@@ -129,6 +117,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Merriweather Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
@@ -140,6 +129,7 @@
             // 
             // btnrecherche
             // 
+            this.btnrecherche.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnrecherche.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(16)))), ((int)(((byte)(221)))));
             this.btnrecherche.FlatAppearance.BorderSize = 2;
             this.btnrecherche.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -155,12 +145,13 @@
             // 
             // btnmodif
             // 
+            this.btnmodif.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnmodif.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(16)))), ((int)(((byte)(221)))));
             this.btnmodif.FlatAppearance.BorderSize = 2;
             this.btnmodif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnmodif.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmodif.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnmodif.Location = new System.Drawing.Point(861, 355);
+            this.btnmodif.Location = new System.Drawing.Point(276, 583);
             this.btnmodif.Name = "btnmodif";
             this.btnmodif.Size = new System.Drawing.Size(171, 86);
             this.btnmodif.TabIndex = 5;
@@ -170,6 +161,7 @@
             // 
             // txtrecherche
             // 
+            this.txtrecherche.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtrecherche.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
             this.txtrecherche.ForeColor = System.Drawing.SystemColors.Control;
             this.txtrecherche.Location = new System.Drawing.Point(206, 62);
@@ -179,12 +171,13 @@
             // 
             // btnsuppr
             // 
+            this.btnsuppr.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnsuppr.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(16)))), ((int)(((byte)(221)))));
             this.btnsuppr.FlatAppearance.BorderSize = 2;
             this.btnsuppr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsuppr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsuppr.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnsuppr.Location = new System.Drawing.Point(562, 583);
+            this.btnsuppr.Location = new System.Drawing.Point(551, 583);
             this.btnsuppr.Name = "btnsuppr";
             this.btnsuppr.Size = new System.Drawing.Size(171, 86);
             this.btnsuppr.TabIndex = 6;
@@ -194,6 +187,7 @@
             // 
             // btnajouter
             // 
+            this.btnajouter.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnajouter.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(16)))), ((int)(((byte)(221)))));
             this.btnajouter.FlatAppearance.BorderSize = 2;
             this.btnajouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -209,15 +203,18 @@
             // 
             // grdgenre
             // 
+            this.grdgenre.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.grdgenre.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grdgenre.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.grdgenre.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Exo 2 Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdgenre.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Exo 2 Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdgenre.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.grdgenre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdgenre.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.grdgenre.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
@@ -234,6 +231,7 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.btn_Fermer);
             this.panel1.Controls.Add(this.btn_Moyen);
             this.panel1.Controls.Add(this.btn_Petit);
@@ -288,11 +286,8 @@
             // menu
             // 
             this.menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(45)))), ((int)(((byte)(67)))));
-            this.menu.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menu.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fichier,
-            this.catégorie});
+            this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { this.fichier, this.catégorie });
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
             this.menu.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
@@ -304,13 +299,12 @@
             // fichier
             // 
             this.fichier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
-            this.fichier.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.quitterToolStripMenuItem});
+            this.fichier.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.quitterToolStripMenuItem });
             this.fichier.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.fichier.ForeColor = System.Drawing.SystemColors.Control;
             this.fichier.Margin = new System.Windows.Forms.Padding(0, 0, 0, -1);
             this.fichier.Name = "fichier";
-            this.fichier.Size = new System.Drawing.Size(78, 29);
+            this.fichier.Size = new System.Drawing.Size(74, 29);
             this.fichier.Text = "Fichier";
             // 
             // quitterToolStripMenuItem
@@ -318,23 +312,19 @@
             this.quitterToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.quitterToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(139, 30);
             this.quitterToolStripMenuItem.Text = "Quitter";
             this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click_1);
             // 
             // catégorie
             // 
             this.catégorie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
-            this.catégorie.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sallesToolStripMenuItem,
-            this.filmsToolStripMenuItem,
-            this.projectionsToolStripMenuItem,
-            this.pdfToolStripMenuItem});
+            this.catégorie.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.sallesToolStripMenuItem, this.filmsToolStripMenuItem, this.projectionsToolStripMenuItem, this.pdfToolStripMenuItem });
             this.catégorie.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.catégorie.ForeColor = System.Drawing.SystemColors.Control;
             this.catégorie.Margin = new System.Windows.Forms.Padding(0, 0, 0, -1);
             this.catégorie.Name = "catégorie";
-            this.catégorie.Size = new System.Drawing.Size(112, 29);
+            this.catégorie.Size = new System.Drawing.Size(108, 29);
             this.catégorie.Text = "Catégories";
             // 
             // sallesToolStripMenuItem
@@ -342,7 +332,7 @@
             this.sallesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.sallesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.sallesToolStripMenuItem.Name = "sallesToolStripMenuItem";
-            this.sallesToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.sallesToolStripMenuItem.Size = new System.Drawing.Size(171, 30);
             this.sallesToolStripMenuItem.Text = "Salles";
             this.sallesToolStripMenuItem.Click += new System.EventHandler(this.genreToolStripMenuItem_Click_1);
             // 
@@ -351,7 +341,7 @@
             this.filmsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.filmsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.filmsToolStripMenuItem.Name = "filmsToolStripMenuItem";
-            this.filmsToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.filmsToolStripMenuItem.Size = new System.Drawing.Size(171, 30);
             this.filmsToolStripMenuItem.Text = "Films";
             this.filmsToolStripMenuItem.Click += new System.EventHandler(this.filmsToolStripMenuItem_Click);
             // 
@@ -360,7 +350,7 @@
             this.projectionsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.projectionsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.projectionsToolStripMenuItem.Name = "projectionsToolStripMenuItem";
-            this.projectionsToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.projectionsToolStripMenuItem.Size = new System.Drawing.Size(171, 30);
             this.projectionsToolStripMenuItem.Text = "Projections";
             this.projectionsToolStripMenuItem.Click += new System.EventHandler(this.projectionsToolStripMenuItem_Click);
             // 
@@ -369,18 +359,17 @@
             this.pdfToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.pdfToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.pdfToolStripMenuItem.Name = "pdfToolStripMenuItem";
-            this.pdfToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.pdfToolStripMenuItem.Size = new System.Drawing.Size(171, 30);
             this.pdfToolStripMenuItem.Text = "Pdf";
             this.pdfToolStripMenuItem.Click += new System.EventHandler(this.pdfToolStripMenuItem_Click);
             // 
             // Salle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.ClientSize = new System.Drawing.Size(1143, 723);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btn_refresh);
             this.Controls.Add(this.lblmessage);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -405,12 +394,10 @@
             this.menu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btn_refresh;
         private System.Windows.Forms.Label lblmessage;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

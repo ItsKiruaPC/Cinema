@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Projection));
             this.lblmessage = new System.Windows.Forms.Label();
             this.lbl_film = new System.Windows.Forms.Label();
@@ -84,10 +84,11 @@
             // 
             // lbl_film
             // 
+            this.lbl_film.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_film.AutoSize = true;
             this.lbl_film.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_film.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_film.Location = new System.Drawing.Point(1886, 465);
+            this.lbl_film.Location = new System.Drawing.Point(1941, 464);
             this.lbl_film.Name = "lbl_film";
             this.lbl_film.Size = new System.Drawing.Size(42, 20);
             this.lbl_film.TabIndex = 43;
@@ -96,10 +97,11 @@
             // 
             // lbl_numero
             // 
+            this.lbl_numero.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_numero.AutoSize = true;
             this.lbl_numero.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_numero.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_numero.Location = new System.Drawing.Point(1886, 391);
+            this.lbl_numero.Location = new System.Drawing.Point(1950, 390);
             this.lbl_numero.Name = "lbl_numero";
             this.lbl_numero.Size = new System.Drawing.Size(27, 20);
             this.lbl_numero.TabIndex = 42;
@@ -108,21 +110,23 @@
             // 
             // txtnum
             // 
+            this.txtnum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtnum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
             this.txtnum.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnum.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtnum.Location = new System.Drawing.Point(1882, 415);
+            this.txtnum.Location = new System.Drawing.Point(1915, 415);
             this.txtnum.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtnum.Name = "txtnum";
-            this.txtnum.Size = new System.Drawing.Size(64, 26);
+            this.txtnum.Size = new System.Drawing.Size(88, 26);
             this.txtnum.TabIndex = 4;
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Merriweather", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(1842, 315);
+            this.label1.Location = new System.Drawing.Point(1825, 315);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(299, 33);
             this.label1.TabIndex = 39;
@@ -157,13 +161,14 @@
             // 
             // btnsuppr
             // 
+            this.btnsuppr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnsuppr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.btnsuppr.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(16)))), ((int)(((byte)(221)))));
             this.btnsuppr.FlatAppearance.BorderSize = 2;
             this.btnsuppr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsuppr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsuppr.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnsuppr.Location = new System.Drawing.Point(1890, 1102);
+            this.btnsuppr.Location = new System.Drawing.Point(2003, 1036);
             this.btnsuppr.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnsuppr.Name = "btnsuppr";
             this.btnsuppr.Size = new System.Drawing.Size(159, 75);
@@ -174,13 +179,14 @@
             // 
             // btnajouter
             // 
+            this.btnajouter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnajouter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.btnajouter.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(16)))), ((int)(((byte)(221)))));
             this.btnajouter.FlatAppearance.BorderSize = 2;
             this.btnajouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnajouter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnajouter.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnajouter.Location = new System.Drawing.Point(1890, 960);
+            this.btnajouter.Location = new System.Drawing.Point(1745, 1036);
             this.btnajouter.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnajouter.Name = "btnajouter";
             this.btnajouter.Size = new System.Drawing.Size(159, 75);
@@ -191,39 +197,42 @@
             // 
             // grdgenre
             // 
+            this.grdgenre.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.grdgenre.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdgenre.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.grdgenre.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdgenre.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdgenre.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.grdgenre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdgenre.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.grdgenre.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
-            this.grdgenre.Location = new System.Drawing.Point(258, 315);
+            this.grdgenre.Location = new System.Drawing.Point(36, 315);
             this.grdgenre.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.grdgenre.Name = "grdgenre";
             this.grdgenre.RowHeadersWidth = 51;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.grdgenre.RowsDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.grdgenre.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.grdgenre.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grdgenre.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             this.grdgenre.RowTemplate.DefaultCellStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.grdgenre.RowTemplate.Height = 24;
-            this.grdgenre.Size = new System.Drawing.Size(1466, 1008);
+            this.grdgenre.Size = new System.Drawing.Size(1688, 1008);
             this.grdgenre.TabIndex = 45;
             this.grdgenre.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdgenre_CellCenter);
             // 
             // lbl_date
             // 
+            this.lbl_date.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_date.AutoSize = true;
             this.lbl_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_date.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_date.Location = new System.Drawing.Point(1886, 612);
+            this.lbl_date.Location = new System.Drawing.Point(1941, 612);
             this.lbl_date.Name = "lbl_date";
             this.lbl_date.Size = new System.Drawing.Size(48, 20);
             this.lbl_date.TabIndex = 51;
@@ -232,10 +241,11 @@
             // 
             // lbl_salle
             // 
+            this.lbl_salle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_salle.AutoSize = true;
             this.lbl_salle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_salle.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_salle.Location = new System.Drawing.Point(1886, 538);
+            this.lbl_salle.Location = new System.Drawing.Point(1940, 538);
             this.lbl_salle.Name = "lbl_salle";
             this.lbl_salle.Size = new System.Drawing.Size(49, 20);
             this.lbl_salle.TabIndex = 50;
@@ -244,10 +254,11 @@
             // 
             // lbl_horaire
             // 
+            this.lbl_horaire.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_horaire.AutoSize = true;
             this.lbl_horaire.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_horaire.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_horaire.Location = new System.Drawing.Point(1886, 689);
+            this.lbl_horaire.Location = new System.Drawing.Point(1935, 689);
             this.lbl_horaire.Name = "lbl_horaire";
             this.lbl_horaire.Size = new System.Drawing.Size(68, 20);
             this.lbl_horaire.TabIndex = 54;
@@ -256,6 +267,7 @@
             // 
             // cbofilm
             // 
+            this.cbofilm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbofilm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
             this.cbofilm.ForeColor = System.Drawing.SystemColors.Control;
             this.cbofilm.FormattingEnabled = true;
@@ -267,6 +279,7 @@
             // 
             // cbosalle
             // 
+            this.cbosalle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbosalle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
             this.cbosalle.ForeColor = System.Drawing.SystemColors.Control;
             this.cbosalle.FormattingEnabled = true;
@@ -278,6 +291,7 @@
             // 
             // cbohoraire
             // 
+            this.cbohoraire.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbohoraire.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
             this.cbohoraire.ForeColor = System.Drawing.SystemColors.Control;
             this.cbohoraire.FormattingEnabled = true;
@@ -289,6 +303,7 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTimePicker1.CalendarForeColor = System.Drawing.SystemColors.Control;
             this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
             this.dateTimePicker1.Checked = false;
@@ -353,32 +368,34 @@
             // 
             this.loupe.BackColor = System.Drawing.Color.Transparent;
             this.loupe.Image = ((System.Drawing.Image)(resources.GetObject("loupe.Image")));
-            this.loupe.Location = new System.Drawing.Point(1108, 262);
+            this.loupe.Location = new System.Drawing.Point(1110, 260);
             this.loupe.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.loupe.Name = "loupe";
-            this.loupe.Size = new System.Drawing.Size(32, 34);
+            this.loupe.Size = new System.Drawing.Size(28, 30);
             this.loupe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.loupe.TabIndex = 66;
             this.loupe.TabStop = false;
             // 
             // txt_desc
             // 
+            this.txt_desc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_desc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
             this.txt_desc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_desc.ForeColor = System.Drawing.SystemColors.Control;
-            this.txt_desc.Location = new System.Drawing.Point(1882, 791);
+            this.txt_desc.Location = new System.Drawing.Point(1825, 791);
             this.txt_desc.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txt_desc.Multiline = true;
             this.txt_desc.Name = "txt_desc";
-            this.txt_desc.Size = new System.Drawing.Size(250, 132);
+            this.txt_desc.Size = new System.Drawing.Size(299, 132);
             this.txt_desc.TabIndex = 9;
             // 
             // lbl_description
             // 
+            this.lbl_description.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_description.AutoSize = true;
             this.lbl_description.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_description.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_description.Location = new System.Drawing.Point(1886, 766);
+            this.lbl_description.Location = new System.Drawing.Point(1921, 766);
             this.lbl_description.Name = "lbl_description";
             this.lbl_description.Size = new System.Drawing.Size(100, 20);
             this.lbl_description.TabIndex = 68;
@@ -387,6 +404,7 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.btn_Fermer);
             this.panel1.Controls.Add(this.btn_Moyen);
             this.panel1.Controls.Add(this.btn_Petit);
@@ -441,13 +459,12 @@
             // fichier
             // 
             this.fichier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
-            this.fichier.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.quitterToolStripMenuItem});
+            this.fichier.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.quitterToolStripMenuItem });
             this.fichier.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.fichier.ForeColor = System.Drawing.SystemColors.Control;
             this.fichier.Margin = new System.Windows.Forms.Padding(0, 0, 0, -1);
             this.fichier.Name = "fichier";
-            this.fichier.Size = new System.Drawing.Size(78, 35);
+            this.fichier.Size = new System.Drawing.Size(74, 29);
             this.fichier.Text = "Fichier";
             // 
             // quitterToolStripMenuItem
@@ -455,23 +472,19 @@
             this.quitterToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.quitterToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(169, 34);
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(139, 30);
             this.quitterToolStripMenuItem.Text = "Quitter";
             this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
             // 
             // catégorie
             // 
             this.catégorie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
-            this.catégorie.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.genreToolStripMenuItem,
-            this.sallesToolStripMenuItem,
-            this.filmsToolStripMenuItem,
-            this.pdfToolStripMenuItem});
+            this.catégorie.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.genreToolStripMenuItem, this.sallesToolStripMenuItem, this.filmsToolStripMenuItem, this.pdfToolStripMenuItem });
             this.catégorie.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.catégorie.ForeColor = System.Drawing.SystemColors.Control;
             this.catégorie.Margin = new System.Windows.Forms.Padding(0, 0, 0, -1);
             this.catégorie.Name = "catégorie";
-            this.catégorie.Size = new System.Drawing.Size(112, 35);
+            this.catégorie.Size = new System.Drawing.Size(108, 29);
             this.catégorie.Text = "Catégories";
             // 
             // genreToolStripMenuItem
@@ -479,7 +492,7 @@
             this.genreToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.genreToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.genreToolStripMenuItem.Name = "genreToolStripMenuItem";
-            this.genreToolStripMenuItem.Size = new System.Drawing.Size(168, 34);
+            this.genreToolStripMenuItem.Size = new System.Drawing.Size(138, 30);
             this.genreToolStripMenuItem.Text = "Genres";
             this.genreToolStripMenuItem.Click += new System.EventHandler(this.genreToolStripMenuItem_Click);
             // 
@@ -488,7 +501,7 @@
             this.sallesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.sallesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.sallesToolStripMenuItem.Name = "sallesToolStripMenuItem";
-            this.sallesToolStripMenuItem.Size = new System.Drawing.Size(168, 34);
+            this.sallesToolStripMenuItem.Size = new System.Drawing.Size(138, 30);
             this.sallesToolStripMenuItem.Text = "Salles";
             this.sallesToolStripMenuItem.Click += new System.EventHandler(this.sallesToolStripMenuItem_Click);
             // 
@@ -497,7 +510,7 @@
             this.filmsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.filmsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.filmsToolStripMenuItem.Name = "filmsToolStripMenuItem";
-            this.filmsToolStripMenuItem.Size = new System.Drawing.Size(168, 34);
+            this.filmsToolStripMenuItem.Size = new System.Drawing.Size(138, 30);
             this.filmsToolStripMenuItem.Text = "Films";
             this.filmsToolStripMenuItem.Click += new System.EventHandler(this.filmsToolStripMenuItem_Click);
             // 
@@ -506,18 +519,15 @@
             this.pdfToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.pdfToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.pdfToolStripMenuItem.Name = "pdfToolStripMenuItem";
-            this.pdfToolStripMenuItem.Size = new System.Drawing.Size(168, 34);
+            this.pdfToolStripMenuItem.Size = new System.Drawing.Size(138, 30);
             this.pdfToolStripMenuItem.Text = "Pdf";
             this.pdfToolStripMenuItem.Click += new System.EventHandler(this.pdfToolStripMenuItem_Click);
             // 
             // menu
             // 
             this.menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(45)))), ((int)(((byte)(67)))));
-            this.menu.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menu.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fichier,
-            this.catégorie});
+            this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { this.fichier, this.catégorie });
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
             this.menu.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
@@ -528,8 +538,8 @@
             // 
             // Projection
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.ClientSize = new System.Drawing.Size(2184, 1428);
@@ -572,7 +582,6 @@
             this.menu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

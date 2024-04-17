@@ -1,18 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.Odbc;
-using System.Data.OleDb;
-using System.Drawing;
-using System.Drawing.Imaging;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
 
 namespace Cinema
 {
@@ -59,8 +48,8 @@ namespace Cinema
             grdgenre.Columns[3].Width = 170;
             grdgenre.Columns[4].Width = 90;
             grdgenre.Columns[5].Width = 50;
-            grdgenre.Columns[6].Width = 108;
-            grdgenre.Columns[7].Width = 70;
+            grdgenre.Columns[6].Width = 80;
+            grdgenre.Columns[7].Width = 100;
             grdgenre.Columns[6].DefaultCellStyle.Format = "dd/MM/yyyy";
             grdgenre.Columns[0].HeaderText = "Num";
             grdgenre.Columns[1].HeaderText = "Titre";
@@ -99,7 +88,7 @@ namespace Cinema
             cmd.CommandText = "select * from film natural join public";
             cmd2.CommandText = "select * from salle";
             cmd3.CommandText = "select * from concerner";
-            cmd4.CommandText = "select * from projection natural join film natural join public";
+            cmd4.CommandText = "select * from projection natural join film natural join public order by noproj";
 
             cmd.Connection = cnn;
             cmd2.Connection = cnn;
@@ -318,7 +307,9 @@ namespace Cinema
             cnn.Open();
 
             //Requête Sql
-            cmd.CommandText = "select * from projection natural join film natural join public natural join salle where titre like '" + txtrecherche.Text + "%' and noproj like '" + txtnum_find.Text + "%'";
+            cmd.CommandText = "select * from projection natural join film natural join public natural join salle where titre like ? and noproj like ?";
+            cmd.Parameters.AddWithValue("1", "%" + txtrecherche.Text + "%");
+            cmd.Parameters.AddWithValue("2", "%" + txtnum_find.Text + "%");
             cmd.Connection = cnn;
 
             //Requête Sql
@@ -350,7 +341,6 @@ namespace Cinema
                                     grdgenre[4, grdgenre.RowCount - 1].Value += lecteur2["libgenre"].ToString() + " ";
                                     existedonnee2 = lecteur2.Read();
                                 }
-
                             lecteur2.Close();
                         }
 

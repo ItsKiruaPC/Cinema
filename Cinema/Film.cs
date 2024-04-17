@@ -1,15 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.Odbc;
-using System.Drawing;
-using System.Drawing.Imaging;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Cinema
@@ -51,10 +42,10 @@ namespace Cinema
             grdgenre.AllowUserToResizeRows = false;
             grdgenre.AllowUserToResizeColumns = false;
             grdgenre.ColumnCount = 4;
-            grdgenre.Columns[0].Width = 40;
+            grdgenre.Columns[0].Width = 20;
             grdgenre.Columns[1].Width = 150;
-            grdgenre.Columns[2].Width = 170;
-            grdgenre.Columns[3].Width = 108;
+            grdgenre.Columns[2].Width = 150;
+            grdgenre.Columns[3].Width = 170;
             grdgenre.Columns[0].HeaderText = "N°";
             grdgenre.Columns[1].HeaderText = "Film";
             grdgenre.Columns[2].HeaderText = "Public";
@@ -106,7 +97,7 @@ namespace Cinema
                     cb_public.Items.Add(lecteur["libpublic"]);
                     existedonnee = lecteur.Read();
                 }
-                    lecteur.Close();
+                lecteur.Close();
                 //Boucle pour afficher le film créer dans le tableau
                 while (existedonnee2 == true)
                 {
@@ -122,7 +113,7 @@ namespace Cinema
                             grdgenre[3, grdgenre.RowCount - 1].Value += lecteur4["libgenre"].ToString() + " \n";
                             existedonnee4 = lecteur4.Read();
                         }
-                
+                        
                     lecteur4.Close();
                     existedonnee2 = lecteur2.Read();
                 }
@@ -134,13 +125,10 @@ namespace Cinema
                     lst_genre.Items.Add(lecteur3["libgenre"]);
                     existedonnee3 = lecteur3.Read();
                 }
-
-            
             lecteur2.Close();
             lecteur3.Close();
             
             cnn.Close();
-            
         }
 
         //Bouton pour ajouter des films
@@ -270,7 +258,8 @@ namespace Cinema
             cnn.Open();
 
             //Requête Sql pour afficher les données en fonction de la recherche
-            cmd.CommandText = "select * from film inner join public on film.nopublic=public.nopublic where titre like '" + txtrecherche.Text + "%'";
+            cmd.CommandText = "select * from film inner join public on film.nopublic=public.nopublic where titre like ?";
+            cmd.Parameters.AddWithValue("1", "%" + txtrecherche.Text + "%");
             cmd2.CommandText = "select * from genre";
             cmd.Connection = cnn;
             cmd2.Connection = cnn;

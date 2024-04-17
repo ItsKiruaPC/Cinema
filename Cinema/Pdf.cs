@@ -1,23 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Odbc;
-using System.Data.OleDb;
-using iTextSharp;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
-using System.Web;
 using System.IO;
-using System.Net.Http;
-using System.Diagnostics;
-using System.Runtime.Remoting.Channels;
-using static System.Net.WebRequestMethods;
 
 namespace Cinema
 {

@@ -23,8 +23,8 @@
         #region Code généré par le Concepteur Windows Form
 
         /// <summary>
-        /// Méthode requise pour la prise en charge du concepteur - ne modifiez pas
-        /// le contenu de cette méthode avec l'éditeur de code.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -41,7 +41,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblmessage = new System.Windows.Forms.Label();
-            this.btn_refresh = new System.Windows.Forms.Button();
             this.menu = new System.Windows.Forms.MenuStrip();
             this.fichier = new System.Windows.Forms.ToolStripMenuItem();
             this.quitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,6 +60,9 @@
             // 
             // grdgenre
             // 
+            this.grdgenre.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.grdgenre.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grdgenre.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.grdgenre.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
@@ -73,29 +75,30 @@
             this.grdgenre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdgenre.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.grdgenre.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
-            this.grdgenre.Location = new System.Drawing.Point(9, 85);
-            this.grdgenre.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grdgenre.Location = new System.Drawing.Point(14, 131);
+            this.grdgenre.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.grdgenre.Name = "grdgenre";
             this.grdgenre.RowHeadersWidth = 51;
             this.grdgenre.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Exo 2 Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grdgenre.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             this.grdgenre.RowTemplate.DefaultCellStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.grdgenre.RowTemplate.Height = 24;
-            this.grdgenre.Size = new System.Drawing.Size(472, 269);
+            this.grdgenre.Size = new System.Drawing.Size(708, 414);
             this.grdgenre.TabIndex = 28;
             this.grdgenre.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdgenre_CellCenter);
             // 
             // btnajouter
             // 
+            this.btnajouter.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnajouter.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(16)))), ((int)(((byte)(221)))));
             this.btnajouter.FlatAppearance.BorderSize = 2;
             this.btnajouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnajouter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnajouter.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnajouter.Location = new System.Drawing.Point(9, 384);
-            this.btnajouter.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnajouter.Location = new System.Drawing.Point(14, 591);
+            this.btnajouter.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnajouter.Name = "btnajouter";
-            this.btnajouter.Size = new System.Drawing.Size(115, 54);
+            this.btnajouter.Size = new System.Drawing.Size(172, 83);
             this.btnajouter.TabIndex = 8;
             this.btnajouter.Text = "Ajouter";
             this.btnajouter.UseVisualStyleBackColor = true;
@@ -103,15 +106,16 @@
             // 
             // btnsuppr
             // 
+            this.btnsuppr.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnsuppr.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(16)))), ((int)(((byte)(221)))));
             this.btnsuppr.FlatAppearance.BorderSize = 2;
             this.btnsuppr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsuppr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsuppr.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnsuppr.Location = new System.Drawing.Point(375, 384);
-            this.btnsuppr.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnsuppr.Location = new System.Drawing.Point(550, 591);
+            this.btnsuppr.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnsuppr.Name = "btnsuppr";
-            this.btnsuppr.Size = new System.Drawing.Size(115, 54);
+            this.btnsuppr.Size = new System.Drawing.Size(172, 83);
             this.btnsuppr.TabIndex = 6;
             this.btnsuppr.Text = "Supprimer";
             this.btnsuppr.UseVisualStyleBackColor = true;
@@ -119,25 +123,27 @@
             // 
             // txtrecherche
             // 
+            this.txtrecherche.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtrecherche.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
             this.txtrecherche.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtrecherche.Location = new System.Drawing.Point(136, 45);
-            this.txtrecherche.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtrecherche.Location = new System.Drawing.Point(204, 69);
+            this.txtrecherche.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtrecherche.Name = "txtrecherche";
-            this.txtrecherche.Size = new System.Drawing.Size(162, 20);
+            this.txtrecherche.Size = new System.Drawing.Size(241, 26);
             this.txtrecherche.TabIndex = 1;
             // 
             // btnmodif
             // 
+            this.btnmodif.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnmodif.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(16)))), ((int)(((byte)(221)))));
             this.btnmodif.FlatAppearance.BorderSize = 2;
             this.btnmodif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnmodif.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmodif.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnmodif.Location = new System.Drawing.Point(574, 241);
-            this.btnmodif.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnmodif.Location = new System.Drawing.Point(272, 591);
+            this.btnmodif.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnmodif.Name = "btnmodif";
-            this.btnmodif.Size = new System.Drawing.Size(115, 54);
+            this.btnmodif.Size = new System.Drawing.Size(188, 83);
             this.btnmodif.TabIndex = 5;
             this.btnmodif.Text = "Modifier";
             this.btnmodif.UseVisualStyleBackColor = true;
@@ -145,15 +151,16 @@
             // 
             // btnrecherche
             // 
+            this.btnrecherche.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnrecherche.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(16)))), ((int)(((byte)(221)))));
             this.btnrecherche.FlatAppearance.BorderSize = 2;
             this.btnrecherche.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnrecherche.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrecherche.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnrecherche.Location = new System.Drawing.Point(315, 40);
-            this.btnrecherche.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnrecherche.Location = new System.Drawing.Point(472, 62);
+            this.btnrecherche.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnrecherche.Name = "btnrecherche";
-            this.btnrecherche.Size = new System.Drawing.Size(87, 28);
+            this.btnrecherche.Size = new System.Drawing.Size(130, 43);
             this.btnrecherche.TabIndex = 2;
             this.btnrecherche.Text = "Rechercher";
             this.btnrecherche.UseVisualStyleBackColor = true;
@@ -161,58 +168,60 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Merriweather Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(570, 85);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(849, 131);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 21);
+            this.label1.Size = new System.Drawing.Size(241, 33);
             this.label1.TabIndex = 10;
             this.label1.Text = "Modifier les tables";
             // 
             // txtnum
             // 
+            this.txtnum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtnum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
             this.txtnum.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtnum.Location = new System.Drawing.Point(574, 133);
-            this.txtnum.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtnum.Location = new System.Drawing.Point(855, 223);
+            this.txtnum.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtnum.Name = "txtnum";
-            this.txtnum.Size = new System.Drawing.Size(44, 20);
+            this.txtnum.Size = new System.Drawing.Size(64, 26);
             this.txtnum.TabIndex = 3;
             // 
             // txtnom
             // 
+            this.txtnom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtnom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
             this.txtnom.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtnom.Location = new System.Drawing.Point(574, 174);
-            this.txtnom.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtnom.Location = new System.Drawing.Point(855, 286);
+            this.txtnom.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtnom.Name = "txtnom";
-            this.txtnom.Size = new System.Drawing.Size(123, 20);
+            this.txtnom.Size = new System.Drawing.Size(182, 26);
             this.txtnom.TabIndex = 4;
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(524, 135);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(780, 226);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(21, 13);
+            this.label2.Size = new System.Drawing.Size(27, 20);
             this.label2.TabIndex = 14;
             this.label2.Text = "N°";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(524, 176);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(780, 289);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 13);
+            this.label3.Size = new System.Drawing.Size(45, 20);
             this.label3.TabIndex = 15;
             this.label3.Text = "Nom";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -222,39 +231,20 @@
             this.lblmessage.AutoSize = true;
             this.lblmessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblmessage.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblmessage.Location = new System.Drawing.Point(504, 357);
-            this.lblmessage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblmessage.Location = new System.Drawing.Point(756, 549);
             this.lblmessage.Name = "lblmessage";
-            this.lblmessage.Size = new System.Drawing.Size(0, 20);
+            this.lblmessage.Size = new System.Drawing.Size(0, 29);
             this.lblmessage.TabIndex = 16;
-            // 
-            // btn_refresh
-            // 
-            this.btn_refresh.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(16)))), ((int)(((byte)(221)))));
-            this.btn_refresh.FlatAppearance.BorderSize = 2;
-            this.btn_refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_refresh.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_refresh.Location = new System.Drawing.Point(193, 384);
-            this.btn_refresh.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btn_refresh.Name = "btn_refresh";
-            this.btn_refresh.Size = new System.Drawing.Size(115, 54);
-            this.btn_refresh.TabIndex = 7;
-            this.btn_refresh.Text = "Rafraichir";
-            this.btn_refresh.UseVisualStyleBackColor = true;
-            this.btn_refresh.Click += new System.EventHandler(this.btn_refresh_Click);
             // 
             // menu
             // 
             this.menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(45)))), ((int)(((byte)(67)))));
             this.menu.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fichier,
-            this.catégorie});
+            this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { this.fichier, this.catégorie });
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.menu.Size = new System.Drawing.Size(762, 24);
+            this.menu.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.menu.Size = new System.Drawing.Size(1143, 30);
             this.menu.TabIndex = 69;
             this.menu.Text = "menuStrip1";
             this.menu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.menu_MouseDown);
@@ -262,13 +252,12 @@
             // fichier
             // 
             this.fichier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
-            this.fichier.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.quitterToolStripMenuItem});
+            this.fichier.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.quitterToolStripMenuItem });
             this.fichier.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.fichier.ForeColor = System.Drawing.SystemColors.Control;
             this.fichier.Margin = new System.Windows.Forms.Padding(0, 0, 0, -1);
             this.fichier.Name = "fichier";
-            this.fichier.Size = new System.Drawing.Size(54, 24);
+            this.fichier.Size = new System.Drawing.Size(74, 29);
             this.fichier.Text = "Fichier";
             // 
             // quitterToolStripMenuItem
@@ -276,23 +265,19 @@
             this.quitterToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.quitterToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(139, 30);
             this.quitterToolStripMenuItem.Text = "Quitter";
             this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
             // 
             // catégorie
             // 
             this.catégorie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
-            this.catégorie.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sallesToolStripMenuItem,
-            this.filmsToolStripMenuItem,
-            this.projectionsToolStripMenuItem,
-            this.pdfToolStripMenuItem});
+            this.catégorie.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.sallesToolStripMenuItem, this.filmsToolStripMenuItem, this.projectionsToolStripMenuItem, this.pdfToolStripMenuItem });
             this.catégorie.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.catégorie.ForeColor = System.Drawing.SystemColors.Control;
             this.catégorie.Margin = new System.Windows.Forms.Padding(0, 0, 0, -1);
             this.catégorie.Name = "catégorie";
-            this.catégorie.Size = new System.Drawing.Size(75, 24);
+            this.catégorie.Size = new System.Drawing.Size(108, 29);
             this.catégorie.Text = "Catégories";
             // 
             // sallesToolStripMenuItem
@@ -300,7 +285,7 @@
             this.sallesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.sallesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.sallesToolStripMenuItem.Name = "sallesToolStripMenuItem";
-            this.sallesToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.sallesToolStripMenuItem.Size = new System.Drawing.Size(171, 30);
             this.sallesToolStripMenuItem.Text = "Salles";
             this.sallesToolStripMenuItem.Click += new System.EventHandler(this.sallesToolStripMenuItem_Click);
             // 
@@ -309,7 +294,7 @@
             this.filmsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.filmsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.filmsToolStripMenuItem.Name = "filmsToolStripMenuItem";
-            this.filmsToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.filmsToolStripMenuItem.Size = new System.Drawing.Size(171, 30);
             this.filmsToolStripMenuItem.Text = "Films";
             this.filmsToolStripMenuItem.Click += new System.EventHandler(this.filmsToolStripMenuItem_Click);
             // 
@@ -318,7 +303,7 @@
             this.projectionsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.projectionsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.projectionsToolStripMenuItem.Name = "projectionsToolStripMenuItem";
-            this.projectionsToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.projectionsToolStripMenuItem.Size = new System.Drawing.Size(171, 30);
             this.projectionsToolStripMenuItem.Text = "Projections";
             this.projectionsToolStripMenuItem.Click += new System.EventHandler(this.projectionsToolStripMenuItem_Click);
             // 
@@ -327,7 +312,7 @@
             this.pdfToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
             this.pdfToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.pdfToolStripMenuItem.Name = "pdfToolStripMenuItem";
-            this.pdfToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.pdfToolStripMenuItem.Size = new System.Drawing.Size(171, 30);
             this.pdfToolStripMenuItem.Text = "Pdf";
             this.pdfToolStripMenuItem.Click += new System.EventHandler(this.pdfToolStripMenuItem_Click);
             // 
@@ -337,22 +322,24 @@
             this.btn_Petit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Petit.FlatAppearance.BorderSize = 0;
             this.btn_Petit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Petit.Location = new System.Drawing.Point(10, 4);
+            this.btn_Petit.Location = new System.Drawing.Point(15, 6);
             this.btn_Petit.Margin = new System.Windows.Forms.Padding(0);
             this.btn_Petit.Name = "btn_Petit";
-            this.btn_Petit.Size = new System.Drawing.Size(15, 15);
+            this.btn_Petit.Size = new System.Drawing.Size(22, 23);
             this.btn_Petit.TabIndex = 73;
             this.btn_Petit.UseVisualStyleBackColor = false;
             this.btn_Petit.Click += new System.EventHandler(this.btn_Petit_Click);
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.btn_Fermer);
             this.panel1.Controls.Add(this.btn_Moyen);
             this.panel1.Controls.Add(this.btn_Petit);
-            this.panel1.Location = new System.Drawing.Point(672, 0);
+            this.panel1.Location = new System.Drawing.Point(1008, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(90, 24);
+            this.panel1.Size = new System.Drawing.Size(135, 37);
             this.panel1.TabIndex = 74;
             // 
             // btn_Fermer
@@ -361,10 +348,10 @@
             this.btn_Fermer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Fermer.FlatAppearance.BorderSize = 0;
             this.btn_Fermer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Fermer.Location = new System.Drawing.Point(70, 4);
+            this.btn_Fermer.Location = new System.Drawing.Point(105, 6);
             this.btn_Fermer.Margin = new System.Windows.Forms.Padding(0);
             this.btn_Fermer.Name = "btn_Fermer";
-            this.btn_Fermer.Size = new System.Drawing.Size(15, 15);
+            this.btn_Fermer.Size = new System.Drawing.Size(22, 23);
             this.btn_Fermer.TabIndex = 75;
             this.btn_Fermer.UseVisualStyleBackColor = false;
             this.btn_Fermer.Click += new System.EventHandler(this.btn_Fermer_Click);
@@ -375,22 +362,21 @@
             this.btn_Moyen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Moyen.FlatAppearance.BorderSize = 0;
             this.btn_Moyen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Moyen.Location = new System.Drawing.Point(40, 4);
+            this.btn_Moyen.Location = new System.Drawing.Point(60, 6);
             this.btn_Moyen.Margin = new System.Windows.Forms.Padding(0);
             this.btn_Moyen.Name = "btn_Moyen";
-            this.btn_Moyen.Size = new System.Drawing.Size(15, 15);
+            this.btn_Moyen.Size = new System.Drawing.Size(22, 23);
             this.btn_Moyen.TabIndex = 74;
             this.btn_Moyen.UseVisualStyleBackColor = false;
             this.btn_Moyen.Click += new System.EventHandler(this.btn_Moyen_Click);
             // 
             // Genre
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
-            this.ClientSize = new System.Drawing.Size(762, 471);
+            this.ClientSize = new System.Drawing.Size(1143, 725);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btn_refresh);
             this.Controls.Add(this.lblmessage);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -405,7 +391,7 @@
             this.Controls.Add(this.grdgenre);
             this.Controls.Add(this.menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Genre";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Genres";
@@ -416,7 +402,6 @@
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
@@ -432,7 +417,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblmessage;
         internal System.Windows.Forms.DataGridView grdgenre;
-        private System.Windows.Forms.Button btn_refresh;
         private System.Windows.Forms.MenuStrip menu;
         private System.Windows.Forms.ToolStripMenuItem fichier;
         private System.Windows.Forms.ToolStripMenuItem quitterToolStripMenuItem;
